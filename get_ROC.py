@@ -16,7 +16,7 @@ random_state = np.random.RandomState(0)
 
 #get the Gpickle having the list of CFGS extracted from soot for permutation MR
 
-gpickle_File_Path = '/Users/aanair/metamorphic-workspace/metamorphic/maltesque/gPickles/additive/additive_org_m1_m3_m4.gpickle'
+gpickle_File_Path = './gPickles/additive/additive_org_m1_m3_m4.gpickle'
 graph_List = networkx.read_gpickle(gpickle_File_Path)
 
 C_param = 1000
@@ -24,7 +24,7 @@ lambda_param = 1.2
 
 #get the labels for Permutation MR
 
-label = np.loadtxt("/Users/aanair/metamorphic-workspace/metamorphic/maltesque/labels/additive/final_labels/additive_org_m1_m3_m4.txt", dtype=np.int32)
+label = np.loadtxt("./Labels/additive/final_labels/additive_org_m1_m3_m4.txt", dtype=np.int32)
 
 data, target = balance_data(graph_List, label, random_state=random_state)
 
