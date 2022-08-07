@@ -10,7 +10,7 @@ gTestList = []
 gTrainList = []
 labelTrainList =[]
 labelTestList = []
-with open('/Users/aanair/metamorphic-workspace/metamorphic/maltesque/gPickles/additive/additive_dataLabel_org_m1_m3_m4.csv', 'r') as csvFile:
+with open('./Labels/additive/additive_dataLabel_org_m1_m3_m4.csv', 'r') as csvFile:
 	reader = csv.reader(csvFile)
 	counter = 0
 	for row in reader:
@@ -39,9 +39,9 @@ with open('/Users/aanair/metamorphic-workspace/metamorphic/maltesque/gPickles/ad
 		#print(len(k.nodes),v) 
 
 
-nx.write_gpickle(gList, "/home/aravind/metamorphic/maltesque/gPickles/additive/additive_org_m1_m3_m4.gpickle")
+nx.write_gpickle(gList, "./gPickles/additive/additive_org_m1_m3_m4.gpickle")
 
-with open('/home/aravind/metamorphic/maltesque/labels/additive/final_labels/additive_org_m1_m3_m4.txt', 'w') as f:
+with open('./Labels/additive/final_labels/additive_org_m1_m3_m4.txt', 'w') as f:
     for item in labelList:
         f.write("%s\n" % item)
 csvFile.close()
