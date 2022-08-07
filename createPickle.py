@@ -17,7 +17,7 @@ with open('/Users/aanair/metamorphic-workspace/metamorphic/maltesque/gPickles/ad
 		print(row)
 		dotFile = row[0]	
 		label = row[1]
-		filepath = '/home/aravind/metamorphic/maltesque/DotFiles/all/'
+		filepath = './DotFiles/all/'
 		G = nx.drawing.nx_pydot.read_dot(str(filepath)+ str(dotFile))
 		#edge = nx.readwrite.edgelist.write_edgelist(G,str(counter)+".edgelist", data = False)
 		#for x in edge:
