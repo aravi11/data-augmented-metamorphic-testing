@@ -1,4 +1,4 @@
-# Leveraging Mutants for Automatic Prediction of MetamorphicRelations using Machine Learning 
+# Leveraging Mutants for Automatic Prediction of Metamorphic Relations using Machine Learning 
 
 A python implementation for the paper "Leveraging Mutants for Automatic Prediction of MetamorphicRelations using Machine Learning" (Maltesque 2019)
 
